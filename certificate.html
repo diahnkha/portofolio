@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/project.css" rel="stylesheet" />
+<title>Delphi Project</title>
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Certificate</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="assets/img/certificate/1.png" alt="Machine Learning" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/certificate/2.png" alt="Python" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/certificate/3.png" alt="Node.js" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/certificate/4.png" alt="Web Development Path(Node.js)" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="assets/img/certificate/5.png" alt="Command Line" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/certificate/6.png" alt="SQL" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/certificate/7.png" alt="HTML & CSS" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/certificate/8.png" alt="Javascript" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="assets/img/certificate/9.png" alt="Frontend Bootcamp" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/certificate/10.png" alt="Exclusive Bootcamp" style="width:100%" onclick="myFunction(this);">
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:70%; margin-left: 15%; padding-top: 10px;">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>

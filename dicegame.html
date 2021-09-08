@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/project.css" rel="stylesheet" />
+<title>Delphi Project</title>
+<!-- Favicon-->
+<link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Dice Game Web App</h2>
+  <p>Click on the images below:</p>
+</div>
+
+<!-- The four columns -->
+<div class="row">
+  <div class="column">
+    <img src="assets/img/project3/dicegame.png" alt="Player 1 winner's" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/project3/dicegame1.png" alt="Player 2 winner's" style="width:100%" onclick="myFunction(this);">
+  </div>
+  <div class="column">
+    <img src="assets/img/project3/dicegame2.png" alt="Player 1 and Player 2 Draw" style="width:100%" onclick="myFunction(this);">
+  </div>
+
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:70%; margin-left: 15%; padding-top: 10px;">
+  <div id="imgtext"></div>
+</div>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
